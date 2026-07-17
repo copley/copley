@@ -1,5 +1,7 @@
 # Max Copley
 
+Ex AWS employee
+
 Senior software engineer and systems builder based in Wellington, New Zealand.
 
 I operate across backend engineering, cloud infrastructure, production operations, data systems, developer tooling, and AI-assisted engineering workflows. My strength is not only writing code; it is taking ambiguous or broken technical situations and turning them into reliable systems with clear architecture, observable runtime behavior, reproducible fixes, and operational discipline.

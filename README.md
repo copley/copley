@@ -1,6 +1,6 @@
 # Max Copley
 
-Ex AWS employee
+Real person.
 
 Senior software engineer and systems builder based in Wellington, New Zealand.
 

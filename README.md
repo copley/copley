@@ -8,6 +8,44 @@ My current focus is AI-assisted systems engineering: using advanced models as
 an engineering harness for reproduction, root-cause analysis, implementation,
 adversarial testing, and verification.
 
+My Workflow:
+
+Issue discovery
+    ↓
+Issue scoring / prioritisation
+    ↓
+Repository acquisition + environment setup
+    ↓
+Codebase mapping
+    ↓
+Failure reproduction
+    ↓
+Instrumentation
+    ↓
+Hypothesis generation
+    ↓
+Parallel investigation agents
+    ↓
+Candidate patches
+    ↓
+Tests
+    ↓
+Benchmarks
+    ↓
+Static analysis
+    ↓
+Adversarial review agent
+    ↓
+Patch refinement
+    ↓
+PR preparation
+    ↓
+Maintainer feedback ingestion
+    ↓
+Revision
+    ↓
+Engineering case study
+
 ## Current flagship work
 
 ### Netty #17304 — TLS backpressure / direct-memory regression

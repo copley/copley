@@ -2,9 +2,7 @@
 
 Senior software engineer and systems engineer based in Wellington, New Zealand.
 
-I specialize in difficult software failures: JVM/runtime behavior, networking,
-backpressure, concurrency, production debugging, cloud infrastructure, CI/CD,
-and system reliability.
+I work across software systems, backend engineering, infrastructure, cloud, developer tooling, and production debugging. I am strongest when a problem is ambiguous, crosses multiple layers, or needs careful investigation before a fix can be trusted.
 
 My current focus is AI-assisted systems engineering: using advanced models as
 an engineering harness for reproduction, root-cause analysis, implementation,

@@ -1,6 +1,6 @@
 # Max Copley
 
-Senior software engineer and systems engineer based in Wellington, New Zealand.
+Senior software engineer based in Wellington, New Zealand.
 
 I work across software systems, backend engineering, infrastructure, cloud, developer tooling, and production debugging. I am strongest when a problem is ambiguous, crosses multiple layers, or needs careful investigation before a fix can be trusted.
 

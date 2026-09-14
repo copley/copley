@@ -23,6 +23,16 @@ I am most useful when a failure is ambiguous, intermittent, crosses multiple lay
 
 [**vitest-dev/vitest#11155**](https://github.com/vitest-dev/vitest/pull/11155) fixes a Vitest 5 benchmark project-filter identity regression. The contribution includes reproduction, a bounded TypeScript change, regression coverage for selection/exclusion behaviour, and broad verification. It is currently **in review**, not presented as merged work.
 
+### Current source-inspected debugging queue
+
+These are active investigations, not claims of contribution:
+
+- [**docker/cli#7302**](https://github.com/docker/cli/issues/7302) — Docker v29 builds `ServiceUpdateOptions.QueryRegistry` when `--image` changes, then discards that options object when making the final service-update call, explaining why mutable tags are no longer resolved to digests.
+- [**npm/cli#9966**](https://github.com/npm/cli/issues/9966) — Arborist's non-hosted Git dependency validation compares repository location but can treat a changed commit SHA as valid, allowing a lockfile/node_modules entry for the previous commit to survive `npm install`.
+- [**pydantic/pydantic#13802**](https://github.com/pydantic/pydantic/issues/13802) — error-reference examples can silently stop raising while docs CI remains green because the expected assertion/output exists only inside the unentered `except` path.
+
+The queue is deliberately source-inspected before any public diagnosis is posted. The next useful artifact should be a reproducer, regression test, or bounded patch—not an ownership-only comment.
+
 ### AI Engineering Harness
 
 [**copley/copley-ai-engineering-harness**](https://github.com/copley/copley-ai-engineering-harness) is a model-independent control plane for directing AI systems through a deterministic engineering lifecycle:

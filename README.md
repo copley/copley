@@ -25,11 +25,11 @@ I am most useful when a failure is ambiguous, intermittent, crosses multiple lay
 
 ### Current source-inspected debugging queue
 
-These are active investigations, not claims of contribution:
+_Last reviewed: 2026-09-16._ These are active investigations, not claims of contribution:
 
-- [**docker/cli#7302**](https://github.com/docker/cli/issues/7302) — Docker v29 builds `ServiceUpdateOptions.QueryRegistry` when `--image` changes, then discards that options object when making the final service-update call, explaining why mutable tags are no longer resolved to digests.
-- [**npm/cli#9966**](https://github.com/npm/cli/issues/9966) — Arborist's non-hosted Git dependency validation compares repository location but can treat a changed commit SHA as valid, allowing a lockfile/node_modules entry for the previous commit to survive `npm install`.
-- [**pydantic/pydantic#13802**](https://github.com/pydantic/pydantic/issues/13802) — error-reference examples can silently stop raising while docs CI remains green because the expected assertion/output exists only inside the unentered `except` path.
+- [**vitest-dev/vitest#11276**](https://github.com/vitest-dev/vitest/issues/11276) — browser mode intentionally constructs `interceptorPlugin({ registerWebSocketEvents: false })`, but the plugin still exposes a `configureServer` hook whose body merely returns. Vite 8 detects the forbidden environment hook from the plugin shape before that guard can help; omitting the hook entirely in the disabled case is a small, regression-testable fix.
+- [**vitest-dev/vitest#11281**](https://github.com/vitest-dev/vitest/issues/11281) — project-specific `defineCacheKeyGenerator` callbacks are registered into one workspace-global generator set, then every generator runs for every environment. Two projects can therefore contribute the same combined cache-key material to a shared module even though their transforms differ.
+- [**actions/runner#4723**](https://github.com/actions/runner/issues/4723) — the runner's workflow-permissions model is stale beyond the JSON schema: `code-quality` and `copilot-requests` are absent from the schema, the `Permissions` data model/comparison map, and conversion switch, so synchronization with the GitHub-owned language-services schema needs to cover parsing and policy semantics rather than a one-line schema edit.
 
 The queue is deliberately source-inspected before any public diagnosis is posted. The next useful artifact should be a reproducer, regression test, or bounded patch—not an ownership-only comment.
 
